@@ -17,7 +17,7 @@ const DashboardHeader = () => {
   };
 
   return (
-    <Box as="header" w="full">
+    <Box as="header" w="full" pos="sticky" top="0">
       <TopHeader onOpenDrawer={() => handleOpenDrawer(true)} />
       <BottomHeader
         openDrawer={openDrawer}

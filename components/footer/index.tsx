@@ -1,7 +1,8 @@
+import { Box } from "@chakra-ui/react";
 import React from "react";
 
 const Footer = () => {
-  return <div></div>;
+  return <Box h="15px"></Box>;
 };
 
 export default Footer;

@@ -3,12 +3,13 @@ import { Box, Flex, Heading, VStack } from "@chakra-ui/react";
 import SalesOverview from "./_common/sales-overview";
 import ListingOverview from "./_common/listing-overview";
 import UsersOverview from "./_common/users-overview";
+import GalleryCards from "./_common/gallery-cards";
 
 export default function Home() {
   return (
     <Box w="full">
-      <Box w="full" maxW="var(--max-width)" m="0 auto">
-        <Box w="full" pt="8px" pb="12px">
+      <VStack w="full" maxW="var(--max-width)" m="0 auto" spaceY="5px">
+        <Box w="full" pt="8px">
           <Heading
             as="h2"
             fontSize="20px"
@@ -26,7 +27,11 @@ export default function Home() {
             <UsersOverview />
           </VStack>
         </Flex>
-      </Box>
+
+        <Box w="full">
+          <GalleryCards />
+        </Box>
+      </VStack>
     </Box>
   );
 }
