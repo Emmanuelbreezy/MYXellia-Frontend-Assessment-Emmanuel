@@ -16,6 +16,10 @@ const config = defineConfig({
           red: {
             "500": { value: "#F04438" },
           },
+          black: {
+            "600": { value: "#171717" },
+            "900": { value: "#0D0D0D" },
+          },
           gray: {
             "50": { value: "#F9FAFB" },
             "100": { value: "#F4F4F5" },

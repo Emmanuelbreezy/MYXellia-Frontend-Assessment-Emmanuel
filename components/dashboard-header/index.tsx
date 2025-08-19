@@ -17,14 +17,25 @@ const DashboardHeader = () => {
   };
 
   return (
-    <Box as="header" w="full" pos="sticky" top="0">
-      <TopHeader onOpenDrawer={() => handleOpenDrawer(true)} />
-      <BottomHeader
-        openDrawer={openDrawer}
-        search={keyword}
-        onOpenDrawer={handleOpenDrawer}
-        onSearch={onSearch}
-      />
+    <Box mb="155px">
+      <Box
+        as="header"
+        w="full"
+        position="fixed"
+        top="0"
+        left="0"
+        bottom="0"
+        zIndex="50"
+        h="auto"
+      >
+        <TopHeader onOpenDrawer={() => handleOpenDrawer(true)} />
+        <BottomHeader
+          openDrawer={openDrawer}
+          search={keyword}
+          onOpenDrawer={handleOpenDrawer}
+          onSearch={onSearch}
+        />
+      </Box>
     </Box>
   );
 };

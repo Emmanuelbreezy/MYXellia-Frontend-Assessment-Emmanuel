@@ -6,7 +6,7 @@ import NotificationIcon from "@/assets/icons/notification-icon.svg";
 import MessageIcon from "@/assets/icons/message-icon.svg";
 import UserPopover from "./user-popover";
 import BudgetPopover from "./budget-popover";
-import CalendarPopover from "./calendar-popover";
+import CalendarDrawer from "./calendar-drawer";
 import { Tooltip } from "../../ui/tooltip";
 
 type PropsType = {
@@ -14,7 +14,7 @@ type PropsType = {
 };
 const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
   return (
-    <HStack w="full" justifyContent="center" minH="80px" bg="#191919">
+    <HStack w="full" justifyContent="center" h="80px" bg="#191919">
       <Flex
         w="full"
         h="full"
@@ -41,8 +41,8 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
             pt="10px !important"
           >
             <List.Item h="full">
-              <Tooltip content="Notification">
-                <IconButton asChild aria-label="notification">
+              <Tooltip content="Notification" disabled>
+                <IconButton asChild aria-label="notification" disabled>
                   <NotificationIcon />
                 </IconButton>
               </Tooltip>
@@ -53,12 +53,12 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
             </List.Item>
 
             <List.Item h="full">
-              <CalendarPopover />
+              <CalendarDrawer />
             </List.Item>
 
             <List.Item h="full">
-              <Tooltip content="Message">
-                <IconButton asChild aria-label="message">
+              <Tooltip content="Message" disabled>
+                <IconButton asChild aria-label="message" disabled>
                   <MessageIcon />
                 </IconButton>
               </Tooltip>

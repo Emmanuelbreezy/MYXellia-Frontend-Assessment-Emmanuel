@@ -10,7 +10,7 @@ type CarouselCardProps = {
 };
 
 const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
   const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   useEffect(() => {
@@ -62,13 +62,15 @@ const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
                   </Text>
                 </Box>
                 {/* Dot indicators */}
-                <HStack gap={2} justify="center" py={2}>
+                <HStack gap={2} justify="center" py={2} zIndex={20}>
                   {images.map((_, i) => (
                     <Box
+                      as="button"
                       key={i}
                       w="8px"
                       h="8px"
                       borderRadius="full"
+                      cursor="pointer"
                       bg={
                         i === selectedIndex ? "brand.white" : "brand.gray.300"
                       }
