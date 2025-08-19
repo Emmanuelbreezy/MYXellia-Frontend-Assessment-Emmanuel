@@ -21,7 +21,7 @@ export default function Home() {
 
         <Flex w="full" flexDirection={{ base: "column", lg: "row" }} gap="10px">
           <SalesOverview />
-          <VStack w="full" flex="0.5" gap="15px">
+          <VStack w="full" flex="0.5" gap="17.9px">
             <ListingOverview />
             <UsersOverview />
           </VStack>

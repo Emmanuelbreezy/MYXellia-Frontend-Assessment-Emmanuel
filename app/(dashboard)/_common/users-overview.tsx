@@ -1,11 +1,11 @@
 import React from "react";
 import StatCard from "@/components/stat-card";
-import UsersIcon from "@/assets/icons/outline-home.svg";
+import UsersOutlineIcon from "@/assets/icons/users-outline-icon.svg";
 
 const UsersOverview = () => {
   return (
     <StatCard
-      icon={<UsersIcon />}
+      icon={<UsersOutlineIcon />}
       heading="Users Overview"
       stats={[
         { title: "Total", amount: "20.7k" },
