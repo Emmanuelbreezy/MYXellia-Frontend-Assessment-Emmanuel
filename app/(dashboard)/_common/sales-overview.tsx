@@ -114,7 +114,12 @@ const SalesOverview = () => {
         >
           <HStack justifyContent="space-between">
             <Box>
-              <Heading fontSize="20px" fontWeight="600" color="brand.secondary">
+              <Heading
+                fontSize="20px"
+                fontWeight="600"
+                color="brand.secondary"
+                fontFamily="euclid"
+              >
                 Sales Overview
               </Heading>
               <Text fontSize="12px" color="brand.gray.400">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, IconButton } from "@chakra-ui/react";
+import { IconButton } from "@chakra-ui/react";
 import ChatsIcon from "@/assets/icons/chats-icon.svg";
 
 const FloatingButton = () => {

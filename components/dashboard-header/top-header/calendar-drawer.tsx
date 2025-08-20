@@ -29,7 +29,7 @@ const CalendarPopover = () => {
       <Drawer.Root placement="end">
         <Drawer.Trigger>
           <Tooltip content="Calendar">
-            <IconButton unstyled asChild aria-label="calendar">
+            <IconButton cursor="pointer" unstyled asChild aria-label="calendar">
               <CalendarIcon />
             </IconButton>
           </Tooltip>

@@ -10,13 +10,14 @@ export default function DashboardLayout({
 }>) {
   return (
     <>
-      <FloatingButton />
       <VStack as="main" w="full">
         <DashboardHeader />
         <Box w="full">{children}</Box>
 
         <Footer />
       </VStack>
+
+      <FloatingButton />
     </>
   );
 }

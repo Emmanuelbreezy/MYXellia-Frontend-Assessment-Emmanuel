@@ -21,6 +21,7 @@ export default function Home() {
             fontSize="20px"
             fontWeight="600"
             color="brand.secondary"
+            fontFamily="euclid"
           >
             Welcome Ahmed
           </Heading>

@@ -24,7 +24,6 @@ const DashboardHeader = () => {
         position="fixed"
         top="0"
         left="0"
-        bottom="0"
         zIndex="50"
         h="auto"
       >

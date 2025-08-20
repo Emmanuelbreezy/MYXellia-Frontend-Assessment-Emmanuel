@@ -54,9 +54,12 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
               <Tooltip content="Notification" disabled>
                 <IconButton
                   cursor="pointer"
-                  disabled
+                  disabled={true}
                   unstyled
                   aria-label="notification"
+                  _disabled={{
+                    opacity: "0.7",
+                  }}
                 >
                   <NotificationIcon />
                 </IconButton>
@@ -73,7 +76,14 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
 
             <List.Item h="full">
               <Tooltip content="Message" disabled>
-                <IconButton unstyled aria-label="message" disabled>
+                <IconButton
+                  unstyled
+                  aria-label="message"
+                  disabled
+                  _disabled={{
+                    opacity: "0.7",
+                  }}
+                >
                   <MessageIcon />
                 </IconButton>
               </Tooltip>

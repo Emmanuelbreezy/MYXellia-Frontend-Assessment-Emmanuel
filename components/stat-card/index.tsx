@@ -46,6 +46,7 @@ const StatCard = ({
               fontSize="14px"
               fontWeight="500"
               color="brand.gray.800"
+              fontFamily="euclid"
             >
               {heading}
             </Heading>
