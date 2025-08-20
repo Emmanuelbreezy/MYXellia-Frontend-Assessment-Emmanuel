@@ -84,6 +84,7 @@ const BudgetDialog: React.FC<PropsType> = () => {
                                 fontWeight="600"
                                 color="brand.secondary"
                                 lineHeight="20px"
+                                fontFamily="euclid"
                               >
                                 {item.title}
                               </Heading>
@@ -92,6 +93,7 @@ const BudgetDialog: React.FC<PropsType> = () => {
                                 fontWeight="400"
                                 color="brand.gray.400"
                                 lineHeight="15px"
+                                fontFamily="euclid"
                               >
                                 {item.content}
                               </Text>
