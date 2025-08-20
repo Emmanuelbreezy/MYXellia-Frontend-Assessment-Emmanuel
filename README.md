@@ -3,16 +3,14 @@
 ## Submission Details
 
 - **GitHub Repository:** [https://github.com/Emmanuelbreezy/MYXellia-Frontend-Assessment-Emmanuel](https://github.com/Emmanuelbreezy/MYXellia-Frontend-Assessment-Emmanuel)
-- **Live Demo (Vercel):** [https://emmanuel-myxellia-assessment.vercel.app/](https://emmanuel-myxellia-assessment.vercel.app/)
+- **Vercel link:** [https://emmanuel-myxellia-assessment.vercel.app/](https://emmanuel-myxellia-assessment.vercel.app/)
 
-## Overview
+## 🛠️ Tech Stack
+- **Nextjs 15**
+- **TypeScript**
+- **Chakra UI**
+- **Vercel** (deployment)
 
-This project was built as part of the **MyXellia Frontend Assessment**. The goal was to implement the required features with a clean, responsive, and scalable frontend architecture.
-
-## Requirements Fulfilled
-
-- ✅ Deployed on **Vercel**
-- ✅ Codebase accessible on **GitHub**
 
 ## How to Run Locally
 
