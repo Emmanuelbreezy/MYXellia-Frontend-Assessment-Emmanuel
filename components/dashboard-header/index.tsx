@@ -17,7 +17,7 @@ const DashboardHeader = () => {
   };
 
   return (
-    <Box mb="155px">
+    <Box mb={{ base: "80px", lg: "155px" }}>
       <Box
         as="header"
         w="full"

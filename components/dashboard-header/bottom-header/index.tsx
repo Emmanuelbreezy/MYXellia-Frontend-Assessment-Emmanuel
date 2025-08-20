@@ -26,6 +26,7 @@ const BottomHeader: React.FC<PropsType> = ({
         bg="brand.white"
         borderBottom="1px solid"
         borderColor="brand.gray.100"
+        px={{ base: "10px", xl: 0 }}
       >
         <Flex
           w="full"
@@ -54,9 +55,8 @@ const BottomHeader: React.FC<PropsType> = ({
         <Drawer.Positioner>
           <Drawer.Content>
             <Drawer.CloseTrigger />
-            <Drawer.Header></Drawer.Header>
             <Drawer.Body>
-              <VStack pr="10px" spaceY="10px">
+              <VStack pt="12px" pr="10px" pl="8px" spaceY="14px">
                 <SearchBar
                   {...{
                     search,

@@ -23,7 +23,7 @@ const UserPopover = () => {
             <Tooltip.Trigger>
               <Avatar.Root cursor="pointer">
                 <Avatar.Image />
-                <Avatar.Fallback name="Dylan Frank" />
+                <Avatar.Fallback name="Dylan" />
               </Avatar.Root>
             </Tooltip.Trigger>
             <Tooltip.Positioner>
@@ -43,15 +43,7 @@ const UserPopover = () => {
         <Popover.Positioner>
           <Popover.Content>
             <Popover.CloseTrigger />
-            <Popover.Arrow>
-              <Popover.ArrowTip />
-            </Popover.Arrow>
-            <Popover.Body>
-              <Text my="4">
-                Naruto is a Japanese manga series written and illustrated by
-                Masashi Kishimoto.
-              </Text>
-            </Popover.Body>
+            <Popover.Body></Popover.Body>
           </Popover.Content>
         </Popover.Positioner>
       </Portal>

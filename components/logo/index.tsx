@@ -7,13 +7,11 @@ const Logo = (props: { url?: string }) => {
   const { url = "/" } = props;
   return (
     <Link href={url}>
-      <LinkBox>
-        <Image
-          src="/images/myxellia-logo.png"
-          width={150}
-          height={26}
-          alt="myxellia log"
-        />
+      <LinkBox
+        w={{ base: "90px", lg: "150px" }}
+        h={{ base: "20px", lg: "26px" }}
+      >
+        <Image src="/images/myxellia-logo.png" fill alt="myxellia log" />
       </LinkBox>
     </Link>
   );

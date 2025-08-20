@@ -4,6 +4,7 @@ import { Flex, HStack, IconButton, List } from "@chakra-ui/react";
 import Logo from "../../logo";
 import NotificationIcon from "@/assets/icons/notification-icon.svg";
 import MessageIcon from "@/assets/icons/message-icon.svg";
+import MenuIcon from "@/assets/icons/menu-icon.svg";
 import UserPopover from "./user-popover";
 import BudgetPopover from "./budget-popover";
 import CalendarDrawer from "./calendar-drawer";
@@ -14,7 +15,13 @@ type PropsType = {
 };
 const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
   return (
-    <HStack w="full" justifyContent="center" h="80px" bg="#191919">
+    <HStack
+      w="full"
+      justifyContent="center"
+      h="80px"
+      bg="#191919"
+      px={{ base: "10px", xl: 0 }}
+    >
       <Flex
         w="full"
         h="full"
@@ -24,12 +31,15 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
         justifyContent="space-between"
         px={{ base: "5px", lg: "0" }}
       >
-        <HStack>
+        <HStack gap="2px">
           <IconButton
             display={{ base: "flex", lg: "none" }}
-            color="brand.white"
+            w="24px"
+            h="24px"
             onClick={onOpenDrawer}
-          />
+          >
+            <MenuIcon />
+          </IconButton>
           <Logo />
         </HStack>
         <HStack alignItems="center" gap={{ base: "20px", lg: "25px" }}>
@@ -42,7 +52,7 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
           >
             <List.Item h="full">
               <Tooltip content="Notification" disabled>
-                <IconButton asChild aria-label="notification" disabled>
+                <IconButton unstyled aria-label="notification" disabled>
                   <NotificationIcon />
                 </IconButton>
               </Tooltip>
@@ -58,7 +68,7 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
 
             <List.Item h="full">
               <Tooltip content="Message" disabled>
-                <IconButton asChild aria-label="message" disabled>
+                <IconButton unstyled aria-label="message" disabled>
                   <MessageIcon />
                 </IconButton>
               </Tooltip>

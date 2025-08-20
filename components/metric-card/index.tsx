@@ -2,6 +2,7 @@ import React from "react";
 import { Card, VStack, HStack, Text } from "@chakra-ui/react";
 import ArrowCircleUpIcon from "@/assets/icons/arrow-circle-up.svg";
 import ArrowCircleDownIcon from "@/assets/icons/arrow-circle-down.svg";
+import { transform } from "next/dist/build/swc/generated-native";
 
 type MetricCardProps = {
   title: string;
@@ -22,10 +23,11 @@ export const MetricCard = ({
     trend === "up" ? true : trend === "down" ? false : percentageChange >= 0;
 
   const color = isUp ? "brand.green.500" : "brand.red.500";
+  const forceDown = title === "Commission Revenue";
 
   return (
     <Card.Root
-      w="189px"
+      w={{ base: "full", lg: "189px" }}
       h="73px"
       p="10px"
       rounded="12px"
@@ -42,7 +44,12 @@ export const MetricCard = ({
           </Text>
           <HStack gap="2px">
             {isUp ? (
-              <ArrowCircleUpIcon style={{ marginBottom: "1.5px" }} />
+              <ArrowCircleUpIcon
+                style={{
+                  marginBottom: "1.5px",
+                  transform: forceDown ? "rotate(180deg)" : "",
+                }}
+              />
             ) : (
               <ArrowCircleDownIcon style={{ marginBottom: "1.5px" }} />
             )}

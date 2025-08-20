@@ -43,7 +43,7 @@ const BudgetPopover: React.FC<PropsType> = () => {
       <Dialog.Root placement="center">
         <Dialog.Trigger>
           <Tooltip content="Budgeting">
-            <IconButton asChild aria-label="budgeting">
+            <IconButton unstyled asChild aria-label="budgeting">
               <BudgetingIcon />
             </IconButton>
           </Tooltip>

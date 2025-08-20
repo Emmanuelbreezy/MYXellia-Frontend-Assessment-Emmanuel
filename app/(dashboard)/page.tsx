@@ -8,7 +8,13 @@ import GalleryCards from "./_common/gallery-cards";
 export default function Home() {
   return (
     <Box w="full">
-      <VStack w="full" maxW="var(--max-width)" m="0 auto" spaceY="5px">
+      <VStack
+        w="full"
+        maxW="var(--max-width)"
+        m="0 auto"
+        spaceY="5px"
+        px={{ base: "10px", xl: 0 }}
+      >
         <Box w="full" pt="8px">
           <Heading
             as="h2"
