@@ -20,22 +20,22 @@ const MenuList = () => {
     {
       label: "Listings",
       icon: <ListingIcon />,
-      href: "/listings",
+      href: "#",
     },
     {
       label: "Users",
       icon: <UsersIcon />,
-      href: "/users",
+      href: "#",
     },
     {
       label: "Request",
       icon: <RequestIcon />,
-      href: "/request",
+      href: "#",
     },
     {
       label: "Applications",
       icon: <ApplicationIcon />,
-      href: "/applications",
+      href: "#",
     },
   ];
   return (
