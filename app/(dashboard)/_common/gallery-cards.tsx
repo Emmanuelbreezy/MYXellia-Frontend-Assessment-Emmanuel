@@ -12,12 +12,22 @@ const GalleryCards = () => {
     {
       title: "Most WATCHLISTED",
       content: "Urban Prime Plaza Premiere",
-      images: ["./images/gallery-img2.png", "./images/gallery-img1.jpg"],
+      images: [
+        "./images/gallery-img2.png",
+        "./images/gallery-img1.jpg",
+        "./images/gallery-img3.png",
+        "./images/gallery-img2.png",
+      ],
     },
     {
       title: "HOTTEST LISTING",
       content: "Urban Prime Plaza Premiere",
-      images: ["./images/gallery-img3.png", "./images/gallery-img1.jpg"],
+      images: [
+        "./images/gallery-img3.png",
+        "./images/gallery-img1.jpg",
+        "./images/gallery-img2.png",
+        "./images/gallery-img3.png",
+      ],
     },
   ];
   return (

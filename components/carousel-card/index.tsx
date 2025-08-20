@@ -41,9 +41,9 @@ const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
             >
               <Box
                 position="absolute"
-                bottom={0}
                 top={0}
                 inset={0}
+                bottom="0"
                 w="full"
                 h="full"
                 display="flex"
@@ -52,6 +52,7 @@ const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
                 bg="linear-gradient(183.45deg, rgba(0, 0, 0, 0.05) 41.18%, rgba(0, 0, 0, 0.6) 100.3%)"
                 color="white"
                 p={3}
+                pb={7}
               >
                 <Box>
                   <Text fontWeight="500" fontSize="14px" color="brand.white">
@@ -61,29 +62,36 @@ const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
                     {content}
                   </Text>
                 </Box>
-
-                {/* Dot indicators */}
-                <HStack gap={2} justify="center" py={2} zIndex={20}>
-                  {images.map((_, i) => (
-                    <Box
-                      as="button"
-                      key={i}
-                      w="8px"
-                      h="8px"
-                      borderRadius="full"
-                      cursor="pointer"
-                      bg={
-                        i === selectedIndex ? "brand.white" : "brand.gray.300"
-                      }
-                      onClick={() => setSelectedIndex(i)}
-                      _hover={{ bg: "brand.gray.400" }}
-                    />
-                  ))}
-                </HStack>
               </Box>
             </Box>
           ))}
         </Box>
+
+        {/* Dot indicators */}
+        <HStack
+          gap={2}
+          w="full"
+          justifyContent="center"
+          py={2}
+          zIndex={20}
+          pos="absolute"
+          bottom="6px"
+        >
+          {images.map((_, i) => (
+            <Box
+              as="button"
+              key={i}
+              w="6.63px"
+              h="6.63px"
+              borderRadius="full"
+              cursor="pointer"
+              bg={i === selectedIndex ? "brand.white" : "brand.gray.300"}
+              border={i === selectedIndex ? "1px solid #E5E5E5" : "none"}
+              onClick={() => emblaApi && emblaApi.scrollTo(i)}
+              _hover={{ bg: "brand.gray.400" }}
+            />
+          ))}
+        </HStack>
       </Card.Body>
     </Card.Root>
   );
