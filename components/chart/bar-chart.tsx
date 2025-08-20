@@ -28,7 +28,7 @@ const Barchart: React.FC<PropsType> = ({
   });
 
   return (
-    <Chart.Root w="full" maxH={chartHeight} chart={chart}>
+    <Chart.Root w="full" h={chartHeight} chart={chart}>
       <BarChart data={chart.data}>
         <XAxis
           tickLine={false}

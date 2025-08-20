@@ -61,6 +61,7 @@ const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
                     {content}
                   </Text>
                 </Box>
+
                 {/* Dot indicators */}
                 <HStack gap={2} justify="center" py={2} zIndex={20}>
                   {images.map((_, i) => (
@@ -74,6 +75,8 @@ const CarouselCard = ({ images, title, content }: CarouselCardProps) => {
                       bg={
                         i === selectedIndex ? "brand.white" : "brand.gray.300"
                       }
+                      onClick={() => setSelectedIndex(i)}
+                      _hover={{ bg: "brand.gray.400" }}
                     />
                   ))}
                 </HStack>
