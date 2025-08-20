@@ -6,7 +6,7 @@ import NotificationIcon from "@/assets/icons/notification-icon.svg";
 import MessageIcon from "@/assets/icons/message-icon.svg";
 import MenuIcon from "@/assets/icons/menu-icon.svg";
 import UserPopover from "./user-popover";
-import BudgetPopover from "./budget-popover";
+import BudgetDialog from "./budget-dialog";
 import CalendarDrawer from "./calendar-drawer";
 import { Tooltip } from "../../ui/tooltip";
 
@@ -52,14 +52,19 @@ const TopHeader: React.FC<PropsType> = ({ onOpenDrawer }) => {
           >
             <List.Item h="full">
               <Tooltip content="Notification" disabled>
-                <IconButton unstyled aria-label="notification" disabled>
+                <IconButton
+                  cursor="pointer"
+                  disabled
+                  unstyled
+                  aria-label="notification"
+                >
                   <NotificationIcon />
                 </IconButton>
               </Tooltip>
             </List.Item>
 
             <List.Item h="full">
-              <BudgetPopover />
+              <BudgetDialog />
             </List.Item>
 
             <List.Item h="full">

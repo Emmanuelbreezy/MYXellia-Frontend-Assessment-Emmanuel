@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import TopHeader from "./top-header";
 import BottomHeader from "./bottom-header";
-import { Box, VStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 const DashboardHeader = () => {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);

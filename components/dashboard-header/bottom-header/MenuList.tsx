@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Text, List, Box } from "@chakra-ui/react";
 import DashboardIcon from "@/assets/icons/dashboard-icon.svg";
@@ -7,7 +8,6 @@ import ListingIcon from "@/assets/icons/listing-icon.svg";
 import UsersIcon from "@/assets/icons/users-icon.svg";
 import RequestIcon from "@/assets/icons/request-icon.svg";
 import ApplicationIcon from "@/assets/icons/application-icon.svg";
-import Link from "next/link";
 
 const MenuList = () => {
   const pathname = usePathname();

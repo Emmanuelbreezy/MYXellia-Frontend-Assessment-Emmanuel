@@ -15,9 +15,9 @@ import SettingIcon from "@/assets/icons/setting-icon.svg";
 import TrendUpIcon from "@/assets/icons/trend-up-icon.svg";
 import ChartIcon from "@/assets/icons/chart-icon.svg";
 import { Tooltip } from "../../ui/tooltip";
-
+Dialog;
 type PropsType = {};
-const BudgetPopover: React.FC<PropsType> = () => {
+const BudgetDialog: React.FC<PropsType> = () => {
   const ITEMS = [
     {
       title: "Set up annual budgets by account category",
@@ -43,7 +43,12 @@ const BudgetPopover: React.FC<PropsType> = () => {
       <Dialog.Root placement="center">
         <Dialog.Trigger>
           <Tooltip content="Budgeting">
-            <IconButton unstyled asChild aria-label="budgeting">
+            <IconButton
+              cursor="pointer"
+              unstyled
+              asChild
+              aria-label="budgeting"
+            >
               <BudgetingIcon />
             </IconButton>
           </Tooltip>
@@ -110,4 +115,4 @@ const BudgetPopover: React.FC<PropsType> = () => {
   );
 };
 
-export default BudgetPopover;
+export default BudgetDialog;

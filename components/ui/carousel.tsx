@@ -4,7 +4,8 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react";
 import { Box, IconButton } from "@chakra-ui/react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import ArrowRightIcon from "@/assets/icons/arrow-round-right.svg";
+import ArrowLeftIcon from "@/assets/icons/arrow-round-left.svg";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type CarouselOptions = Parameters<typeof useEmblaCarousel>[0];
@@ -103,7 +104,7 @@ export function CarouselPrevious() {
       transform="translateY(-50%)"
       borderRadius="full"
     >
-      <ChevronLeftIcon />
+      <ArrowLeftIcon />
     </IconButton>
   );
 }
@@ -121,7 +122,7 @@ export function CarouselNext() {
       transform="translateY(-50%)"
       borderRadius="full"
     >
-      <ChevronRightIcon />
+      <ArrowRightIcon />
     </IconButton>
   );
 }

@@ -8,14 +8,11 @@ import {
   HStack,
   Button,
   ButtonGroup,
-  Flex,
-  Stack,
-  SimpleGrid,
   Grid,
   GridItem,
 } from "@chakra-ui/react";
 import MetricCard from "@/components/metric-card";
-import Barchart from "@/components/chart/bar-chart";
+import Chart from "@/components/chart";
 
 const DateRangeEnum = {
   "1_WEEK": "1_WEEK",
@@ -173,8 +170,8 @@ const SalesOverview = () => {
             py="10px"
           >
             <GridItem overflow="hidden">
-              <Box flex="1" ml="-25px">
-                <Barchart
+              <Box flex="1">
+                <Chart
                   data={chartData}
                   series={series}
                   showLegend={false}

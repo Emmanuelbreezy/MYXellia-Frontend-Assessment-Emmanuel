@@ -1,14 +1,6 @@
 "use client";
 import { Chart, useChart } from "@chakra-ui/charts";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Legend,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import { Bar, BarChart, Legend, Tooltip, XAxis, YAxis } from "recharts";
 
 type ChartData = {
   month: string;

@@ -17,6 +17,7 @@ const config = defineConfig({
             "500": { value: "#F04438" },
           },
           black: {
+            "500": { value: "#242526" },
             "600": { value: "#171717" },
             "900": { value: "#0D0D0D" },
           },

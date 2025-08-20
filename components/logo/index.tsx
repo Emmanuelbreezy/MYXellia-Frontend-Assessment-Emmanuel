@@ -8,7 +8,7 @@ const Logo = (props: { url?: string }) => {
   return (
     <Link href={url}>
       <LinkBox
-        w={{ base: "90px", lg: "150px" }}
+        w={{ base: "90px", lg: "120px" }}
         h={{ base: "20px", lg: "26px" }}
       >
         <Image src="/images/myxellia-logo.png" fill alt="myxellia log" />

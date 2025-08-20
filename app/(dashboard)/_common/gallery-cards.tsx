@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Card, Image } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import CarouselCard from "@/components/carousel-card";
 
 const GalleryCards = () => {
